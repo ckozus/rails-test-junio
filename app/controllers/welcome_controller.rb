@@ -6,4 +6,8 @@ class WelcomeController < ApplicationController
   def contact
   end
 
+  def blog
+    @posts = Post.all
+  end
+
 end
