@@ -1,0 +1,23 @@
+<h1>Hola Mundo!</h1>
+
+<p>Este es un primer ejemplo de pagina web.</p>
+
+<p>Cuanto es 2 + 2? <%= 2 + 2 %></p>
+
+<p>hoy es <%= Date.today %></p>
+
+<% if Date.today.monday? %>
+  <p>Hoy es Lunes :(</p>
+<% else %>
+  <p>Hoy no es Lunes</p>
+<% end %>
+
+<% if Date.today.wednesday? %>
+  <p>Hoy es miércoles!</p>
+<% end %>
+
+<ul>
+  <% for i in 1..100 %>
+    <li>Numero: <%= i %> </li>
+  <% end %>
+</ul>
